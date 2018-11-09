@@ -1,0 +1,466 @@
+@import "bourbon/bourbon"
+
+$text-color: #333
+$red-color: #9b1818
+$blue-color: #003469
+$dark-color: #000
+$green-color: #67bc5c
+
+body
+	font-family: "RobotoRegular", sans-serif
+	font-weight: normal
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialised
+	color: $text-color
+	overflow-x: hidden
+
+h1 
+	color: #fff
+	font-size: 60px
+	line-height: 56px
+	font-weight: bold
+	font-family: "CleanvertisingLight", sans-serif
+	margin: 0
+
+section,
+footer
+	padding: 58px 0 68px 0 
+	&.s_dark
+		h2,h3,p
+			color: #fff
+
+h2
+	color: $blue-color
+	font-size: 50px 
+	line-height: 56px
+	margin-bottom: 50px
+	font-family: "CleanvertisingLight", sans-serif
+	margin-top: 0
+	font-weight: normal
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	box-shadow: red 0 0 0 2px
+	border-radius: 3px
+	border-color: red
+
+body input:required:valid,
+body textarea:required:valid
+	box-shadow:  $green-color 0 0 0 2px
+
+
+
+.hidden
+	display: none
+
+header 
+	min-height: 640px
+	background-image: url(../img/top_bg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top center
+	color: #fff
+	padding: 32px 0 40px 0
+
+
+.logo
+	font-size: 40px 
+	font-family: "RobotoBold", sans-serif
+	font-weight: bold
+	
+.logo 
+	a
+		color: #fff
+		text-decoration: none
+		padding: 10px
+		border-radius: 50%
+		&:hover
+			color: red
+			transition: all 0.5s ease
+			text-decoration: none
+			background-color: #fff
+			
+
+
+
+.tab_item
+	display: none
+
+.tab_item:first-child
+	display: block
+
+.top_phone
+	text-align: right
+
+.top_phone,
+.bottom_phone
+	.wrapper .active
+			text-decoration: underline
+
+.top_phone,
+.bottom_phone
+ 	.wrapper .tab 
+		text-transform: uppercase
+		cursor: pointer
+
+.top_phone,
+.bottom_phone
+	.tab_item 
+		font-family: "RobotoBold", sans-serif
+		font-size: 30px
+.bottom_phone
+	text-align: center
+	color: $red-color
+.top_header 
+	margin-top: 70px
+
+.top_header h2 
+	color: #fff
+	margin: 10px 0 0 0
+	font-family: "CleanvertisingLight", sans-serif
+	font-size: 37px
+
+.tabs_header
+	margin-top: 50px
+	ul, li
+		list-style-type: none
+		margin: 0
+		padding: 0
+	li
+		padding-left: 40px
+		position: relative
+		margin-bottom: 15px 
+	i
+		position: absolute
+		left: 0
+		top: 0
+		line-height: 26px
+		color: #6e6966
+	.tabs
+		.tab
+			display: inline-block
+			background-color: rgba(255, 255, 255, .25)
+			padding: 12px 18px
+			text-transform: uppercase
+			cursor: pointer
+			float: left
+			font-family: "RobotoBold", sans-serif
+			+transition(all .5s ease)
+			&.active
+				background-color: rgba(255, 255, 255, .6)
+				color: #000000
+	.tab_content
+		font-size: 18px
+		background-color: rgba(255, 255, 255, .6)
+		padding: 12px 18px 20px
+		color: #000000
+		text-transform: uppercase
+		font-family: "RobotoBold", sans-serif
+
+
+.button_wrap
+	text-align: center
+
+.button
+	border: none
+	cursor: pointer
+	display: inline-block
+	height: 46px
+	line-height: 46px
+	padding: 0 32px
+	background-color: #000
+	text-transform: uppercase
+	text-align: center
+	border-radius: 3px
+	dont-size: 16px
+	font-family: "RobotoBold"
+	&.btn_red 
+		background-color: $red-color
+	&.btn_green 
+		background-color: $green-color 
+	&.btn_white 
+		background-color: #fff
+		color: #000
+	
+a.button
+	color: #fff
+	text-decoration: none
+
+.s_tizers 
+	+linear-gradient(#C6D8EE, #E7EFF7)
+	color: $blue-color
+	font-family: "Cleanvertising", sans-serif 
+	text-transform: uppercase
+	padding: 40px 0 0
+	span
+		font-size: 14px
+		display: block
+	strong
+		font-weight: normal
+		font-size: 23px
+		display: block
+	.row
+		>div
+			margin-bottom: 35px
+.tiz_img,
+.tiz_descr
+	display: inline-block
+	vertical-align: bottom
+
+.tiz_img i
+		font-size: 70px
+		line-height: 41px
+		margin-right: 5px
+
+.s_tizers .row 
+	>div:nth-child(1)
+		i
+			font-family: "RobotoRegular", sans-serif
+			letter-spacing: -12px
+			margin-right: 15px
+		strong
+			font-size: 25px
+			line-height: 28px
+		span
+			font-size: 19px
+			line-height: 22px
+	> div:nth-child(2)
+		strong
+			font-size: 25px
+			line-height: 28px
+		span
+			font-size: 16px
+			line-height: 24px
+		i
+			line-height: 32px
+			position: relative
+			bottom: -7px
+	> div:nth-child(3)
+		strong
+			line-height: 28px
+		span
+			line-height: 20px
+		i
+			line-height: 32px
+			position: relative
+			bottom: -7px
+	> div:nth-child(4)
+		strong
+			font-size: 23px
+		span
+			font-size: 13px
+			line-height: 10px
+		i
+			position: relative
+			bottom: -3px
+
+.s_profi h2 
+	text-align: center
+
+.s_profi
+	p
+		strong
+			font-family: "RobotoBold", sans-serif
+			font-weight: normal
+
+.profi_left
+	
+	color: $red-color
+	i
+		font-size: 100px
+		line-height: 119px
+
+.profi_right
+	h3
+		display: inline-block
+		color: $red-color
+		font-size: 28px
+		margin: 0
+	p
+		 margin-top: 5px
+
+ 
+form 
+	background-color: #f7f7f7
+	padding: 25px 30px
+	border: $green-color 5px solid
+	border-radius: 5px
+	h2
+		font: 22px "RobotoBold", sans-serif 
+		color: $text-color
+		line-height: 22px
+		text-transform: uppercase
+	label
+		display: block
+		margin-bottom: 14px
+		font-size: 14px
+		color: #666666
+	input,
+	select
+		display: block
+		text-indent: 10px
+		height: 40px
+		line-height: 40px
+		width: 100%
+		font: 20px "RobotoRegular", sans-serif 
+		color: #666666
+		margin-top: 10px
+		border: #d9d9d9 1px solid
+		box-shadow: 0 0 20px rgba(0, 0, 0, .06) inset
+		&:focus
+			box-shadow: $green-color 0 0 0 2px
+			border-radius: 3px
+			border-color: #green-color
+
+.button_wrap
+	text-align: center 
+	margin: 36px 0 20px 0
+	span
+		display: none
+	
+.s_review
+	background-color: #101F24
+	background-image: url(../img/middle_bg.jpg)
+	background-repeat: repeat-x
+	background-attachment: fixed
+	min-height: 741px
+	background-size: cover
+	background-position: top center
+
+.s_dark h2
+	text-align: center
+
+.review_item 
+	color: #fff
+	text-align: center
+	h4
+		font: italic 22px "Times new Roman", sans-serif
+		font-weight: normal
+		margin: 20px 0 20px 0
+	p
+		margin: auto
+		display: inline-block
+		float: none
+		font-size: 15px
+	.img_wrap
+		img
+			width: 165px
+			height: 165px
+			display: inline-block
+			border-radius: 50%
+			border: 10px solid #5e5e5d
+
+.hr
+	width: 80px
+	height: 1px
+	background-color: #cea380
+	margin: 20px auto
+
+
+.owl-nav
+	div
+		width: 34px 
+		height: 140px
+		background-image: url(../img/arrow.png)
+		position: absolute
+		top: 20px
+		opacity: .6
+		&:hover
+			opacity: 1
+	& .owl-next
+		right: 0
+		background-position: top right
+
+.owl-dots
+	width: 100%
+	margin-top: 30px
+	text-align: center
+	.owl-dot
+		width: 14px
+		height: 14px
+		background-color: #fff
+		display: inline-block
+		margin: 0 4px
+		border-radius: 50%
+		opacity: .5
+		&.active
+			opacity: .8
+
+.s_back
+	background-image: url(../img/red_bg.jpg)
+	background-position: top center
+	text-align: center
+	padding: 40px 0
+	h3
+		font: 26px "RobotoRegular", sans-serif
+		font-weight: normal
+		text-transform: uppercase
+		background-color: rgba(255,255,255,.13)
+		padding: 10px 0
+
+.s_contacts
+	padding-bottom: 0
+	text-align: center
+	h2
+		color: #000
+		display: inline-block
+		vertical-align: middle
+		margin-bottom: 0
+		height: 45px 
+		line-height: 45px
+	.tabs
+		display: inline-block
+		vertical-align: middle
+		height: 45px 
+		line-height: 45px
+		margin-left: 30px
+		.btn_red
+			color: #fff
+		.tab
+			padding: 0 60px
+			float: left
+			border: 5px solid $red-color
+			color: $red-color
+			line-height: 38px
+			&:first-child
+				border-radius: 3px 0 0 3px
+			&:last-child
+				border-radius: 0 3px 3px 0
+			&.active
+				background-color: $red-color
+				color: #fff
+	.wrapper
+		margin-top: 15px
+		font-size: 18px
+
+.map
+	margin-top: 20px
+	min-height: 480px
+	background-color: #E1D6B0
+
+
+
+footer
+	h2
+		color: #000
+		text-align: center
+		margin-bottom: 46px
+	p
+		font: 18px "RobotoRegular", sans-serif
+		text-align: center
+	.button_wrap
+		text-align: center
+		margin: 30px 0 30px 0
+
+#hidden_form,
+#form_back,
+#form_call
+	max-width: 420px
+	margin: auto
+	position: relative
+	h2
+		text-align: center
+		font-weight: normal
