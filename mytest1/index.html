@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css">
+    <script src="static/js/picturefill.min.js"></script><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__header-top">
+            <div class="header-top__left">
+              <div class="burger-wrap" id="burger-wrap">
+                <div class="nav-main__burger nav-main__burger--closed" id="burger"></div>
+              </div>
+              <div class="menu-main__wrapper">
+                <div class="header-top__nav-main nav-main--closed" id="menu-main">
+                  <nav class="nav-main">
+                    <ul class="nav-main__list">
+                      <li><a href="#">Популярные маршруты</a></li>
+                      <li><a href="#">Расписание рейсов</a></li>
+                      <li><a href="#">Забронированные рейсы</a></li>
+                      <li><a href="#">Вход для партнеров</a></li>
+                      <li><a href="#">О компании</a></li>
+                      <li><a href="#">Контакты</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="header-top__right">
+              <div class="header-top__person-room">
+                <div class="person-room__icon"></div>
+                <div class="person-room__select">
+                  <select>
+                    <option value="">Личный кабинет</option>
+                  </select>
+                </div>
+              </div>
+              <div class="header-top__currency">
+                <div class="currency__icon"></div>
+                <div class="currency__select">
+                  <select>
+                    <option value="">Рубль</option>
+                  </select>
+                </div>
+              </div>
+              <div class="header-top__language">
+                <div class="language__select">
+                  <select>
+                    <option value="" selected>Ru</option>
+                    <option value="">Eng</option>
+                  </select>
+                </div>
+              </div>
+              <div class="header-top__tel"><a href="tel:88005006105">8 800 500-61-05</a><span>Круглосуточная поддержка</span></div>
+            </div>
+          </div>
+          <div class="header__logo-wrap"><a class="header__logo" href="index.html"><img src="static/images/general/header_logo.png" alt="logo"></a></div>
+          <div class="header__header-bottom"> 
+            <h1 class="header-bottom__title">Морские прогулки<br/> <mark>по черному морю</mark></h1><a class="header-bottom__button button" href="#scroll-catalog">Выбрать круиз</a>
+          </div>
+          <div class="header__line-wrap">
+            <div class="header__line"></div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <section class="main-catalog" id="scroll-catalog">
+          <div class="container">
+            <div class="main-catalog__wrapper">
+              <h2 class="main-catalog__title">Каталог круизов</h2>
+              <div class="main-catalog__sort-wrapper"><span class="main-catalog__sort">Сортировать круизы по </span>
+                <select class="main-catalog__select">
+                  <option selected>цене</option>
+                  <option>месту</option>
+                  <option>отзывам</option>
+                </select>
+              </div>
+            </div>
+            <div class="main-catalog__offer-cards">
+              <div class="offer-card__wrapper">
+                <div class="offer-card">
+                  <div class="offer-card__img-wrap">
+                    <picture>
+                      <source media="(min-width: 1140px)" srcset="static/images/content/cards/card1_desktop.jpg">
+                      <source media="(min-width: 720px)" srcset="static/images/content/cards/card1_tablet.jpg"><img class="offer-card__img" src="static/images/content/cards/card1_mobile.jpg" alt="Круиз в Анапу">
+                    </picture><span class="offer-card__tag offer-card__tag--hit">Хит Продаж</span>
+                  </div>
+                  <div class="offer-card__information">
+                    <h3 class="offer-card__title">Морской круиз <br/> в Анапу</h3>
+                    <p class="offer-card__route"><strong>Маршрут:</strong> Сочи-Лазаревское-Геленджик-Анапа</p><span class="offer-card__time"><strong>Продолжительность:</strong> 10 ч. 0 мин.</span>
+                    <div class="offer-card__price__wrapper"><span class="offer-card__price">49 000 руб.</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-card__wrapper">
+                <div class="offer-card">
+                  <div class="offer-card__img-wrap">
+                    <picture>
+                      <source media="(min-width: 1140px)" srcset="static/images/content/cards/card2_desktop.jpg">
+                      <source media="(min-width: 720px)" srcset="static/images/content/cards/card2_tablet.jpg"><img class="offer-card__img" src="static/images/content/cards/card2_mobile.jpg" alt="Прогулка с экскурсией">
+                    </picture><span class="offer-card__tag offer-card__tag--action">Акция</span>
+                  </div>
+                  <div class="offer-card__information">
+                    <h3 class="offer-card__title">Обзорная морская прогулка с экскурсией</h3>
+                    <p class="offer-card__route"> <strong>Маршрут: </strong> Сочи-Адлер-Сочи <span>(без высадки)</span></p><span class="offer-card__time"><strong>Продолжительность:</strong> 1 ч. 0 мин.</span>
+                    <div class="offer-card__price__wrapper"><span class="offer-card__price">5 000 руб.</span>
+                      <strike class="offer-card__price-old">15000 руб.</strike>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-card__wrapper">
+                <div class="offer-card">
+                  <div class="offer-card__img-wrap">
+                    <picture>
+                      <source media="(min-width: 1140px)" srcset="static/images/content/cards/card3_desktop.jpg">
+                      <source media="(min-width: 720px)" srcset="static/images/content/cards/card3_tablet.jpg"><img class="offer-card__img" src="static/images/content/cards/card3_mobile.jpg" alt="Прогулка в Геленджик">
+                    </picture><span class="offer-card__tag offer-card__tag--action">Скидка 10%</span>
+                  </div>
+                  <div class="offer-card__information">
+                    <h3 class="offer-card__title">Морская прогулка<br/> в Геленджик</h3>
+                    <p class="offer-card__route"><strong>Маршрут:</strong>  Сочи-Туапсе-Геленджик</p><span class="offer-card__time"><strong>Продолжительность:</strong>  12 ч. 30 мин.</span>
+                    <div class="offer-card__price__wrapper"><span class="offer-card__price">7 000 руб.</span>
+                      <strike class="offer-card__price-old">10000 руб.</strike>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-card__wrapper">
+                <div class="offer-card">
+                  <div class="offer-card__img-wrap">
+                    <picture>
+                      <source media="(min-width: 1140px)" srcset="static/images/content/cards/card4_desktop.jpg">
+                      <source media="(min-width: 720px)" srcset="static/images/content/cards/card4_tablet.jpg"><img class="offer-card__img" src="static/images/content/cards/card4_mobile.jpg" alt="Круиз в Новороссийск">
+                    </picture>
+                  </div>
+                  <div class="offer-card__information">
+                    <h3 class="offer-card__title">Морской круиз<br/> в Новороссийск</h3>
+                    <p class="offer-card__route"><strong>Маршрут:</strong> Сочи-Геленджик-Новороссийск-Геленджик-Сочи</p><span class="offer-card__time"><strong>Продолжительность:</strong> 13 ч. 0 мин.</span>
+                    <div class="offer-card__price__wrapper"><span class="offer-card__price">14 800 руб.</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-card__wrapper offer-card__wrapper--plus">
+                <div class="offer-card">
+                  <div class="offer-card__img-wrap"><img class="offer-card__img" src="static/images/content/cards/card5_desktop.jpg" alt="Прогулка в Абрау-Дюрсо"></div>
+                  <div class="offer-card__information">
+                    <h3 class="offer-card__title">Морская прогулка в Абрау-Дюрсо</h3>
+                    <p class="offer-card__route"><strong>Маршрут:</strong> Сочи-Абрау-Дюрсо</p><span class="offer-card__time"><strong>Продолжительность:</strong> 11 ч. 0 мин.</span>
+                    <div class="offer-card__price__wrapper"><span class="offer-card__price">14 800 руб.</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-catalog__button-wrapper">
+              <button class="main-catalog__button button">Больше круизов</button>
+            </div>
+            <div class="overlay overlay--closed">
+              <div class="popup-wrap popup-wrap--closed">
+                <div class="popup__close-wrapper"><span class="popup__close"> </span></div>
+                <div class="popup">
+                  <div class="popup__content">
+                    <div class="content-slider">
+                      <div class="content-slider__big-photo"><img id="photo-big" src="static/images/content/popup/popup-img1.jpg" alt="big photo"></div>
+                      <div class="content-slider__nav">
+                        <div class="nav__img-wrap nav__img-wrap--active" data-numb="1"><img class="popup__image-nav" src="static/images/content/popup/nav/popup-nav1.jpg" alt=""></div>
+                        <div class="nav__img-wrap" data-numb="2"><img class="popup__image-nav" src="static/images/content/popup/nav/popup-nav2.jpg" alt=""></div>
+                        <div class="nav__img-wrap" data-numb="3"><img class="popup__image-nav" src="static/images/content/popup/nav/popup-nav3.jpg" alt=""></div>
+                        <div class="nav__img-wrap" data-numb="4"><img class="popup__image-nav" src="static/images/content/popup/nav/popup-nav4.jpg" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="content-information">
+                      <div class="content-information__descr-place descr-place">
+                        <h3 class="descr-place__title">Морская прогулка<br/> в Абрау-Дюрсо</h3><span class="descr-place__route"> <strong>Маршрут: </strong>Сочи - Абрау-Дюрсо</span><span class="descr-place__time"> <strong>Продолжительность: </strong>11 ч. 0 мин.</span>
+                        <p class="descr-place__schedule"> <strong>Расписание:</strong>Отправление из Сочи: ежедневно в 10:00, 11:40, 13:20, 15:00, 16:40<br/> Отправление из Абрау-Дюрсо: ежедневно в 12:25, 14:05, 15:45, 17:25, 19:05 <br/>Продолжительность: 11 часов 0 мин., из которых 10 часов - морская прогулка (туда и обратно), от 1 часа 30 мин. - свободное время в Ласточкином гнезде.<br/> Причал отправления/прибытия: набережная Ленина, причал №8, теплоход "Азов"</p><span class="descr-place__price">14 800 руб.</span>
+                        <button class="descr-place__button button">Бронирование                            </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__contacts">
+              <ul class="list-contacts">
+                <li><a class="list-contacts__link" href="#">Вход для партнеров</a></li>
+                <li><a class="list-contacts__link" href="#">О компании</a></li>
+                <li><a class="list-contacts__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer__footer-socials footer-socials"><span class="footer-socials__title">Будь на связи:</span>
+              <ul class="footer-socials__list list-socials">
+                <li><a class="list-socials__link list-socials__link--vk" href="#"></a></li>
+                <li><a class="list-socials__link list-socials__link--ok" href="#"></a></li>
+                <li><a class="list-socials__link list-socials__link--youtube" href="#"></a></li>
+                <li><a class="list-socials__link list-socials__link--inst" href="#"></a></li>
+              </ul>
+            </div>
+            <div class="footer__footer-feedback footer-feedback"><a class="footer-feedback__tel" href="tel:88005006105">8 800 500-61-05</a><span class="footer-feedback__support-title">Круглосуточная поддержка</span><span class="footer-feedback__copyright">© 2016 OOO «Городские Круизы»</span></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
