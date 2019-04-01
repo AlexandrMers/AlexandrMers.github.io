@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>ЖК - от Винта</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <div class="container">
+        <input type="checkbox" id="switch" name="switch" form="form_switch">
+        <div class="house house_light">
+          <div class="house__floor-wrap">
+            <div class="house__floor">
+              <div class="floor__window"></div>
+              <div class="floor__window"></div>
+              <div class="floor__window"></div>
+            </div>
+            <div class="house__floor">
+              <div class="floor__window"></div>
+              <div class="floor__window"></div>
+              <div class="floor__window"></div>
+            </div>
+            <div class="house__floor">
+              <div class="floor__window"></div>
+              <div class="floor__window"></div>
+              <div class="floor__window"></div>
+            </div>
+            <div class="house__floor">
+              <div class="floor__window"></div>
+              <div class="floor__window"></div>
+              <div class="floor__window"></div>
+            </div>
+            <div class="house__floor">
+              <div class="floor__window"></div>
+              <div class="floor__window"></div>
+              <div class="floor__window"></div>
+            </div>
+            <div class="house__bottom"></div>
+          </div>
+          <div class="house__form-wrap">
+            <form class="house__form" action="#" id="form_switch">
+              <label class="house__form__switch" for="switch"></label>
+            </form>
+          </div>
+        </div>
+        <div class="house-form__wrap">
+          <div class="house-form">
+            <input class="house-form__choose-input" id="choose-form" type="checkbox" name="choose-form">
+            <h1 class="house-form__title">ЖК от Винта</h1>
+            <label class="house-form__choose-label" for="choose-form"><span class="house-form__text-left">Добавить жителя</span><span class="house-form__text-right">Фильтр</span></label>
+            <div class="house-form__line">
+              <div class="house-form__slide house-form__slide_one">
+                <div class="add-resident">
+                  <h2 class="add-resident__title">Добавить жителя</h2>
+                  <form class="add-resident__form" id="add-resident" action="#" name="add-resident">
+                    <div class="add-resident__input-wrap">
+                      <label class="add-resident__label">Имя
+                        <input class="add-residednt__input" id="name" type="text" name="name" maxlength="15" required title="только буквы">
+                      </label>
+                    </div>
+                    <div class="add-resident__input-wrap add-resident__input-wrap_radio"><span class="add-resident__text">Пол</span>
+                      <input class="add-resident__radio" id="gender-male" type="radio" name="gender" value="мужской" checked>
+                      <input class="add-resident__radio" id="gender-female" type="radio" name="gender" value="женский">
+                      <div class="add-resident__radio-labels">
+                        <label class="add-resident__radio-label add-resident__radio-label_male" for="gender-male">Мужчина</label>
+                        <label class="add-resident__radio-label add-resident__radio-label_female" for="gender-female">Женщина</label>
+                      </div>
+                    </div>
+                    <div class="add-resident__input-wrap">
+                      <label class="add-resident__label">Этаж
+                        <input class="add-residednt__input" id="floor" type="number" name="floor-count" min="1" max="5" required>
+                      </label>
+                    </div>
+                    <div class="add-resident__input-wrap">
+                      <label class="add-resident__label add-resident__label_select">Кол-во комнат
+                        <select class="add-residednt__input add-residednt__input_select" id="count-room" name="select-room" required>
+                          <option value="" selected disabled>Выбрать</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </label>
+                    </div>
+                    <div class="add-resident__input-wrap add-resident__input-wrap_additional"><span class="add-resident__text">Дополнительно</span>
+                      <div class="add-resident__checkbox-labels">
+                        <input class="add-resident__checkbox" id="check-pets" type="checkbox" name="additional" value="Домашние Животные">
+                        <label class="add-resident__label-check" for="check-pets">Домашние животные</label>
+                        <input class="add-resident__checkbox" id="check-tv" type="checkbox" name="additional" value="ТВ">
+                        <label class="add-resident__label-check" for="check-tv">ТВ</label>
+                        <input class="add-resident__checkbox" id="check-internet" type="checkbox" name="additional" value="Интернет">
+                        <label class="add-resident__label-check" for="check-internet">Интернет</label>
+                      </div>
+                    </div>
+                    <div class="add-resident__input-wrap">
+                      <label class="add-resident__label add-resident__label_select">Сколько человек проживает
+                        <select class="add-residednt__input add-residednt__input_select" id="count-people" name="selectCountPeople" required>
+                          <option value="" selected disabled>Выбрать</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </label>
+                    </div>
+                    <div class="add-resident__buttons">
+                      <button class="button button_reset" type="reset">Сбросить</button>
+                      <button class="button button_add" type="submit" id="button-form">Добавить</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="house-form__slide house-form__slide_two">
+                <div class="add-resident add-resident_filter">
+                  <h2 class="add-resident__title">Фильтр</h2>
+                  <form class="add-resident__form" action="#" name="filter">
+                    <div class="add-resident__input-wrap add-resident__input-wrap_radio"><span class="add-resident__text">Пол</span>
+                      <input class="add-resident__radio" id="gender-male-filter" type="radio" name="gender-filter" value="мужской">
+                      <input class="add-resident__radio" id="gender-female-filter" type="radio" name="gender-filter" value="женский">
+                      <div class="add-resident__radio-labels">
+                        <label class="add-resident__radio-label add-resident__radio-label_male" for="gender-male-filter">Мужчина</label>
+                        <label class="add-resident__radio-label add-resident__radio-label_female" for="gender-female-filter">Женщина</label>
+                      </div>
+                    </div>
+                    <div class="add-resident__input-wrap">
+                      <label class="add-resident__label add-resident__label_select">Кол-во комнат
+                        <select class="add-residednt__input add-residednt__input_select" id="select-room-filter" name="select-room-filter">
+                          <option value="" selected disabled>Выбрать</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </label>
+                    </div>
+                    <div class="add-resident__input-wrap add-resident__input-wrap_additional"><span class="add-resident__text">Дополнительно</span>
+                      <div class="add-resident__checkbox-labels">
+                        <input class="add-resident__checkbox" id="check-pets-filter" type="checkbox" name="additional-filter" value="pets">
+                        <label class="add-resident__label-check" for="check-pets-filter">Домашние животные</label>
+                        <input class="add-resident__checkbox" id="check-tv-filter" type="checkbox" name="additional-filter" value="tv">
+                        <label class="add-resident__label-check" for="check-tv-filter">ТВ</label>
+                        <input class="add-resident__checkbox" id="check-internet-filter" type="checkbox" name="additional-filter" value="internet">
+                        <label class="add-resident__label-check" for="check-internet-filter">Интернет</label>
+                      </div>
+                    </div>
+                    <div class="add-resident__input-wrap">
+                      <label class="add-resident__label">Этаж
+                        <input class="add-residednt__input" id="count-floor-filter" type="number" name="floor-count-filter" min="1" max="5" placeholder="Введите">
+                      </label>
+                    </div>
+                    <div class="add-resident__buttons buttons_filter">
+                      <button class="button button_reset button_filter" type="reset" id="btn-filter">Сбросить</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popup">
+            <header class="popup__header">
+              <h3 class="popup__title-name">Алексей Иванов</h3><span class="popup__icon popup__icon_male"></span>
+              <button class="popup-close"></button>
+            </header>
+            <div class="popup__popup-main popup-main">
+              <div class="popup-main__block">
+                <div class="popup-main__criterion">Пол</div>
+                <div class="popup-main__info info_gender">Мужской</div>
+              </div>
+              <div class="popup-main__block">
+                <div class="popup-main__criterion">Кол-во комнат</div>
+                <div class="popup-main__info info_rooms">3</div>
+              </div>
+              <div class="popup-main__block">
+                <div class="popup-main__criterion">Сколько человек проживает</div>
+                <div class="popup-main__info info_people">3</div>
+              </div>
+              <div class="popup-main__block">
+                <div class="popup-main__criterion">Этаж</div>
+                <div class="popup-main__info info_floor">5</div>
+              </div>
+              <div class="popup-main__block">
+                <div class="popup-main__criterion">Дополнительно</div>
+                <div class="popup-main__info info_additional"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
