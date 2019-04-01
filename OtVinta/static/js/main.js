@@ -39,7 +39,7 @@ var cleaner = function () {
   var houseWindows = document.querySelectorAll('.floor__window');
   var countFloor = document.getElementById('floor');
 
-  function toClickHouse() {
+  function toClickHouse(event) {
     var target = event.target;
     var conditionFloor = target.classList.contains('house__floor');
     var conditionWindow = target.classList.contains('floor__window') && target.parentElement.classList.contains('house__floor');
