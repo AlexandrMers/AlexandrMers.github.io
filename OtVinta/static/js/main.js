@@ -81,10 +81,16 @@ var cleaner = function () {
     var closePopup = document.querySelector('.popup-close');
 
     if (element.classList.contains('active-male') || element.classList.contains('active-female')) {
-      toInfoPopup.addInfo(element);
-      popup.classList.add('popup_visible');
-      form.classList.add('hidden');
-      switchTheme.classList.add('hidden');
+      if (element.classList.contains('filter_none')) {
+        alert('Квартира уже занята, выберите другую!');
+        cleaner.toCleanActive(floor, 'floor_active');
+        cleaner.toCleanActive(houseWindows, 'window_active');
+      } else {
+        toInfoPopup.addInfo(element);
+        popup.classList.add('popup_visible');
+        form.classList.add('hidden');
+        switchTheme.classList.add('hidden');
+      }
     } else {
       popup.classList.remove('popup_visible');
       form.classList.remove('hidden');
