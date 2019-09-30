@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>form-page</title>
+    <script src="js/picturefill.min.js"></script>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body>
+    <div class="wrapper-full">
+      <header class="header-main">
+        <div class="header-wrap">
+          <div class="header-main__mnu--wrapper">
+            <nav class="header-main__mnu main-mnu header-main__mnu--opened">
+              <ul class="main-mnu__items">
+                <li class="main-mnu__item"><a href="index.html" class="main-mnu__item-link">Главная</a></li>
+                <li class="main-mnu__item"><a href="photo.html" class="main-mnu__item-link"> Фото и Видео</a></li>
+                <li class="main-mnu__item"><a class="main-mnu__item-link main-mnu__item-link--active">Форма отзыва</a></li>
+                <li class="main-mnu__item"><a href="#" class="main-mnu__item-link">HTML Academy</a></li>
+              </ul><span class="main-mnu__close main-close main-close--js">&#10006;</span>
+            </nav>
+          </div>
+          <div class="header-top"><a href="index.html" class="header-main__logo logo-main">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="svg/header/logotype-header-desktop.svg"/>
+                <source media="(min-width: 768px)" srcset="svg/header/logotype-header-tablet.svg"/><img width="102" height="83" src="svg/header/logotype-header-mobile.svg" alt="City of Sedona"/>
+              </picture></a>
+            <div class="main-mnu__burger main-burger main-burger--js"></div>
+          </div>
+          <div class="header-main__welcome welcome-main welcome-main--photo"><img width="229" height="39" src="svg/photo/header/Sedona.svg" alt="Welcome Sedona" class="welcome__image welcome__image--photo"/></div>
+        </div>
+      </header>
+      <script src="js/script.js"></script>
+      <main class="content-main--form">
+        <section class="form-page">
+          <div class="form-page__wrapper">
+            <header class="form-page__header header-form">
+              <h2 class="header-form__title">Оставьте свой отзыв</h2>
+              <p class="header-form__description">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</p>
+            </header>
+            <div class="form-page__main">
+              <form action="#" class="form-page__form">
+                <div class="form-page__impression impression">
+                  <h2 class="impression__title">Ваше общее впечатление:</h2>
+                  <div class="impression-wrap">
+                    <input id="impression-check1" type="radio" name="radio-button" class="impression__checkbox"/>
+                    <label for="impression-check1" class="impression__label"></label><span class="impression__name">Скорее положительное</span>
+                  </div>
+                  <div class="impression-wrap">
+                    <input id="impression-check2" type="radio" name="radio-button" class="impression__checkbox"/>
+                    <label for="impression-check2" class="impression__label"></label><span class="impression__name">Скорее отрицательное</span>
+                  </div>
+                  <div class="impression-wrap">
+                    <input id="impression-check3" type="radio" name="radio-button" class="impression__checkbox"/>
+                    <label for="impression-check3" class="impression__label"></label><span class="impression__name">Затрудняюсь ответить</span>
+                  </div>
+                </div>
+                <div class="form-page__introduce-myself introduce-myself">
+                  <h2 class="introduce-myself__title">Представьтесь:</h2>
+                  <div class="introduce-myself-wrap">
+                    <label for="" class="introduce-myself__label">Имя<sup>*</sup>:</label>
+                    <input type="text" name="name" placeholder="Петр" class="introduce-myself__input introduce-myself--name"/>
+                  </div>
+                  <div class="introduce-myself-wrap">
+                    <label for="" class="introduce-myself__label">Фамилия<sup>*</sup>:</label>
+                    <input type="text" name="surename" placeholder="Петров" class="introduce-myself__input introduce-myself--doublename"/>
+                  </div>
+                  <div class="introduce-myself-wrap">
+                    <label for="" class="introduce-myself__label">Отчество<sup>*</sup>:</label>
+                    <input type="text" name="doubleName" placeholder="Петрович" class="introduce-myself__input"/>
+                  </div>
+                </div>
+                <div class="form-page__contact-information contact-information">
+                  <h2 class="contact-information__description">Контактная информация</h2>
+                  <div class="contact-information-wrap">
+                    <label class="contact-information__name label-name--tel"><span class="desk-hidden">Контактный</span> телефон<sup>*</sup>:</label>
+                    <input type="tel" name="tel" placeholder="Введите телефон" class="contact-information__input input-tel"/>
+                  </div>
+                  <div class="contact-information-wrap">
+                    <label class="contact-information__name label-name--mail">Электронная почта<sup>*</sup>:</label>
+                    <input type="email" name="email" placeholder="Введите e-mail" class="contact-information__input contact-information__input--email"/>
+                  </div>
+                </div>
+                <div class="form-page__visited-place visited-place">
+                  <h2 class="visited-place__description">Посещенные<br> достопримечательности:</h2>
+                  <div class="visited-place--wrap">
+                    <input id="ckeckbox-visited1" type="checkbox" name="bridgeOfDevil" class="visited-place__checkbox"/>
+                    <label for="ckeckbox-visited1" class="visited-place__label"></label><span class="visited-place__checkbox-description">Мост Дьявола</span>
+                  </div>
+                  <div class="visited-place--wrap">
+                    <input id="ckeckbox-visited2" type="checkbox" name="mountainBell" class="visited-place__checkbox"/>
+                    <label for="ckeckbox-visited2" class="visited-place__label"></label><span class="visited-place__checkbox-description">Гора-Колокол</span>
+                  </div>
+                  <div class="visited-place--wrap">
+                    <input id="ckeckbox-visited3" type="checkbox" name="slidePark" class="visited-place__checkbox"/>
+                    <label for="ckeckbox-visited3" class="visited-place__label"></label><span class="visited-place__checkbox-description">Слайд-парк</span>
+                  </div>
+                  <div class="visited-place--wrap">
+                    <input id="ckeckbox-visited4" type="checkbox" name="redRock" class="visited-place__checkbox"/>
+                    <label for="ckeckbox-visited4" class="visited-place__label"></label><span class="visited-place__checkbox-description">Красные скалы</span>
+                  </div>
+                </div>
+                <div class="form-page__emotion emotion-form">
+                  <h2 class="emotion-form__name">Опишите свои эмоции:</h2><br/>
+                  <textarea name="emotions" placeholder="Опишите подробно все свои восторги" resize="none" class="emotion-form__text"></textarea>
+                </div>
+                <div class="form-page__send">
+                  <button type="submit" class="button button--blue button--form">Отправить отзыв</button><small class="form-page__description"><sup>*</sup> - обязательные поля</small>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <h2 class="footer__title">#visitsedona</h2>
+          <ul class="footer__social social">
+            <li class="social__item"><a href="#" class="social__link"><svg class="social__link--icon" width="18" height="14" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 17.5 14.7" style="enable-background:new 0 0 17.5 14.7;" xml:space="preserve">
+<g id="W6EeEF_1_">
+	<g>
+		<path d="M11.3,0.2C13-0.3,14.4,0.4,15,1.3c0.7-0.2,1.4-0.5,2.1-0.7c0,0.8-0.5,1.5-0.9,1.7c0.7,0.2,1.3-0.5,1.3-0.5
+			c-0.2,1-1,1.7-1.6,2c-0.2,6.6-3.3,11-10.4,10.8c-0.5,0,0.1,0-0.5,0c-0.4,0-4.3-0.4-5-1.8c2.3,0.2,4-0.4,4.8-1.1
+			c-1-0.3-2.8-0.5-3.1-2.9C2.1,8.9,2.3,9,3,8.9C1.8,8.1,0.4,7.4,0.5,5.2c0.3,0.3,1.1,0.5,1.4,0.5c-0.7-0.2-2-3.3-0.9-4.8
+			c1.9,1.8,3.8,3.5,7.4,3.7C8.5,2.3,9.5,0.8,11.3,0.2z"/>
+	</g>
+</g>
+</svg>
+</a></li>
+            <li class="social__item"><a href="#" class="social__link"><svg class="social__link--icon" width="9" height="18" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 8.7 18.9" style="enable-background:new 0 0 8.7 18.9;" xml:space="preserve">
+<path d="M6.3,3.4c0.8,0,1.6,0,2.4,0c0-1.1,0-2.2,0-3.4c-1,0-1.9,0-2.9,0C2.7,0.2,1.5,2.4,1.9,6.1H0v3.5h2c0,3.1,0,6.2,0,9.3
+	c1.3,0,2.6,0,3.8,0c0-3.1,0-6.2,0-9.3h2.9V6.1H5.8C5.8,5.1,5.8,3.7,6.3,3.4z"/>
+</svg>
+</a></li>
+            <li class="social__item"><a href="#" class="social__link"><svg class="social__link--icon" width="20" height="14" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 14" style="enable-background:new 0 0 20 14;" xml:space="preserve">
+<path d="M17.1,0H2.8C1.3,0,0,1.3,0,2.8v8.3C0,12.7,1.3,14,2.8,14h14.3c1.6,0,2.8-1.3,2.8-2.8V2.8C20,1.3,18.7,0,17.1,0z M7,10.4V3.6
+	L13.8,7L7,10.4z"/>
+</svg>
+</a></li>
+          </ul>
+          <div class="footer__copyright copyright">
+            <p class="copyright__text">	Разработано</p><a href="#" class="copyright__logo"><svg class="copyright__icon" width="27" height="34" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#0D0F0F;stroke:#252122;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M13.9,0.4l-0.1,0L0.5,1.8v24.3L13.7,34L27,26.1V1.8L13.9,0.4z M25.3,25.1L13.7,32L2.2,25.1v-10L13.7,22l0,1.2
+	l-7.9-4.7l0,1.2l7.9,4.7l0,1.3l-7.9-4.7l0,1.2l7.9,4.7l8-4.8V21l0,0v-0.4v-0.5v-3l3.6-2.1V25.1z M25.3,13.7l-3.2,1.9l-1.5,0.9
+	l-6.9-4.1l0,1.2l5.9,3.5l-0.1,0l-0.1,0.1l-0.8,0.5l-4.9-2.9l0,1.2l3.9,2.3l-0.9,0.6l0,0l-2.9-1.7l0,1.2l1.9,1.1l-2,1.2L2.3,13.8
+	L13.7,7v0L25.3,13.7z M25.3,12.5L13.7,5.7v0l0,0l0,0v0L2.2,12.5V3.4l11.5-1.2l11.5,1.2V12.5z"/>
+</svg>
+</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
